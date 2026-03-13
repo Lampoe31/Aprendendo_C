@@ -17,7 +17,7 @@ int main (){
     agora. segundos = 43;
 
     printf ("%i:%i:%i\n", agora. horas,
-                        agora. minutos,
-                        agora. segundos);
+                          agora. minutos,
+                          agora. segundos);
     
 }
