@@ -16,8 +16,14 @@ int main (){
     agora. minutos = 40;
     agora. segundos = 43;
 
-    printf ("%i:%i:%i\n", agora. horas,
-                          agora. minutos,
-                          agora. segundos);
+    struct horario depois;
+
+    depois. horas = agora. horas + 10;
+    depois. minutos = agora. horas + agora. minutos;
+    depois. segundos = 43 - 3;
+
+    printf ("%i:%i:%i\n", depois. horas,
+                          depois. minutos,
+                          depois. segundos);
     
 }
