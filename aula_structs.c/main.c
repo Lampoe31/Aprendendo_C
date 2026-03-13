@@ -1,29 +1,29 @@
 #include <stdio.h>
 #include <locale.h>
 
+struct horario{
+    int horas;
+    int minutos;
+    int segundos;
+};
+
 int main (){
     setlocale(LC_ALL, "Portuguese");
 
-    struct horario{
-        int horas;
-        int minutos;
-        int segundos;
-    };
+    struct horario teste (struct horario x);
 
     struct horario agora;
-
     agora. horas = 8;
     agora. minutos = 40;
-    agora. segundos = 43;
+    agora. segundos = 43;   
 
-    struct horario depois;
+    struct horario proxima; 
 
-    depois. horas = agora. horas + 10;
-    depois. minutos = agora. horas + agora. minutos;
-    depois. segundos = 43 - 3;
+    proxima = teste (agora);
 
-    printf ("%i:%i:%i\n", depois. horas,
-                          depois. minutos,
-                          depois. segundos);
-    
+    printf ("%i:%i:%i\n", proxima. horas,
+                          proxima. minutos,
+                          proxima. segundos);
+
+    return 0;
 }
